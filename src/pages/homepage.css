@@ -1,0 +1,61 @@
+:root{
+    --Purple: #A020F0;
+    --White: #F5F5F5 ;
+    --Navy:  #060010;
+    --Raseberry: #FE0149;
+    --D-white: #EDEDED;
+    --L-navy: #0B071F;
+    --Grey: #D9D9D9;
+    --D-grey: #616161;
+    /* sizes */
+    --s64: 4rem;
+    --s48: 3rem;
+    --s32: 2rem;
+    --s24: 1.5rem;
+    --s16: 1rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: var(--Navy);
+
+}
+.f2{
+    font-family: "Kalam", cursive;
+}
+.page{
+    margin: 0 auto;
+    padding: 0 40px;
+    background-color: #F7F9F8;
+    width: 1440px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.s1{
+    font-weight: 700;
+}
+.s2{
+    font-weight: 600;
+}
+.s3{
+    font-weight: 500;
+}
+.s4{
+    font-weight: 400;
+}
+/* code */
