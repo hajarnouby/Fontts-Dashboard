@@ -84,10 +84,6 @@ input {
   min-height: 100vh;
   overflow: hidden;
   color: var(--White);
-  /* background:
-    radial-gradient(circle at 16% 8%, rgba(160, 32, 240, 0.18), transparent 26%),
-    radial-gradient(circle at 92% 100%, rgba(254, 1, 73, 0.12), transparent 22%),
-    linear-gradient(180deg, #120723 0%, var(--L-navy) 48%, var(--Navy) 100%); */
   border-right: 1px solid rgba(160, 32, 240, 0.18);
   box-shadow: 22px 0 54px rgba(0, 0, 0, 0.34);
   animation: panelReveal 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both;
@@ -164,7 +160,6 @@ input {
   height: 3.25rem;
   border-radius: 18px;
   color: var(--Purple);
-  /* background: linear-gradient(180deg, rgba(160, 32, 240, 0.12), rgba(160, 32, 240, 0.02)); */
 }
 
 .menu-brand__logo span {
@@ -321,9 +316,11 @@ input {
 
 .menu-nav__item.is-active {
   color: var(--White);
-  border-radius: 0 0.625rem 0.625rem 0;
+  border: 0;
   border-left: 2.4px solid #A020F0;
+  border-radius: 0 0.625rem 0.625rem 0;
   background: rgba(160, 32, 240, 0.15);
+  box-shadow: none;
 }
 
 .menu-nav__item--minor {
@@ -443,35 +440,6 @@ input {
   font-size: 0.72rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-}
-
-.menu-language {
-  position: relative;
-  z-index: 1;
-  gap: 0.35rem;
-}
-
-.menu-language__pill {
-  min-width: 2rem;
-  height: 2rem;
-  padding: 0 0.55rem;
-  border: 0;
-  border-radius: 999px;
-  color: rgba(245, 245, 245, 0.5);
-  background: rgba(245, 245, 245, 0.05);
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.menu-language__pill:hover {
-  color: var(--White);
-  transform: translateY(-1px);
-}
-
-.menu-language__pill.is-active {
-  color: var(--White);
-  background: linear-gradient(135deg, var(--Purple), #6d1db5);
-  box-shadow: 0 10px 18px rgba(160, 32, 240, 0.28);
 }
 
 .menu-status {
@@ -621,7 +589,6 @@ input {
 .menu-panel.is-compact .menu-icon--chevron,
 .menu-panel.is-compact .menu-submenu,
 .menu-panel.is-compact .menu-label,
-.menu-panel.is-compact .menu-language,
 .menu-panel.is-compact .menu-status,
 .menu-panel.is-compact .menu-profile__copy {
   display: none;

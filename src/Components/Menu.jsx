@@ -67,8 +67,6 @@ const systemNavigation = [
   },
 ];
 
-const languages = ['EN', 'AR'];
-
 const Icon = ({ name, className = '' }) => {
   switch (name) {
     case 'dashboard':
@@ -146,13 +144,6 @@ const Icon = ({ name, className = '' }) => {
           <circle cx="12" cy="16.65" r=".9" fill="currentColor" />
         </svg>
       );
-    case 'language':
-      return (
-        <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.7" />
-          <path d="M4.8 12h14.4M12 4.2c2.25 2.4 3.35 5 3.35 7.8S14.25 17.4 12 19.8c-2.25-2.4-3.35-5-3.35-7.8S9.75 6.6 12 4.2Z" stroke="currentColor" strokeWidth="1.5" />
-        </svg>
-      );
     case 'search':
       return (
         <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -195,7 +186,6 @@ const Menu = () => {
   });
   const [activeMainItem, setActiveMainItem] = useState('urgent-board');
   const [activeSubItem, setActiveSubItem] = useState('');
-  const [activeLanguage, setActiveLanguage] = useState('EN');
 
   const toggleGroup = (groupId) => {
     setOpenGroups((currentGroups) => ({
@@ -324,26 +314,6 @@ const Menu = () => {
               </span>
             </button>
           ))}
-
-          <div className="menu-nav__item menu-nav__item--minor menu-nav__item--static" title={isCompact ? 'Language' : undefined}>
-            <span className="menu-nav__item-copy row">
-              <Icon name="language" className="menu-icon" />
-              <span className="menu-nav__text s2">Language</span>
-            </span>
-
-            <div className="menu-language row" role="group" aria-label="Select language">
-              {languages.map((language) => (
-                <button
-                  key={language}
-                  className={`menu-language__pill${activeLanguage === language ? ' is-active' : ''}`}
-                  type="button"
-                  onClick={() => setActiveLanguage(language)}
-                >
-                  {language}
-                </button>
-              ))}
-            </div>
-          </div>
         </div>
 
         <article className="menu-status">
