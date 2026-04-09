@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import logo from '../assets/images/logow.svg';
 import Menu from '../Components/Menu';
 import Header from '../Components/Header';
+import Title from '../Components/Title';
 
 const Home = () => {
   return (
@@ -38,8 +39,7 @@ const Home = () => {
           <Header />
 
           <main className="home-page__content">
-            {/* Add your page sections here */}
-            <img src={logo} alt="Fontts Logo" />
+            <Title title="Dashboard" subtitle="Platform overview — Sunday, March 22, 2025" />
           </main>
         </div>
       </div>

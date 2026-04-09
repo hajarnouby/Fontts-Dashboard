@@ -21,7 +21,22 @@
 body{
     font-family: "Poppins", sans-serif;
     background: var(--Navy);
-
+        color: var(--White);
+}
+h1{
+    font-size: var(--s64);
+}
+h2{
+    font-size: var(--s48);
+}
+h3{
+    font-size: var(--s32);
+}
+h4{
+    font-size: var(--s24);
+}
+p{
+    font-size: var(--s16);
 }
 .f2{
     font-family: "Kalam", cursive;
@@ -57,6 +72,9 @@ body{
 }
 .s4{
     font-weight: 400;
+}
+.dgrey{
+    color: var(--D-grey);
 }
 /* code */
 .home-page {
