@@ -14,6 +14,7 @@ import ActiveProjects from '../assets/images/ActiveProjects.svg';
 import ActiveClients from '../assets/images/ActiveClients.svg';
 import TotalDesigners from '../assets/images/TotalDesigners.svg';
 import SupportTickets from '../assets/images/SupportTickets.svg';
+import Footer from '../Components/Footer';
 
 
 const Home = () => {
@@ -62,8 +63,9 @@ const Home = () => {
             <StatCard title="Flagged Users" value="7" icon={FlaggedUsers} line="Needs review" lclr="yellow" arrow={require('../assets/videos/warny.gif')} />
             <StatCard title="Support Tickets" value="3 urgent" icon={SupportTickets} line="+8% vs yesterday" lclr="green" arrow={require('../assets/videos/arrowup.gif')} />
             </div>
-                
+
           </main>
+          <Footer />
         </div>
       </div>
     </>
