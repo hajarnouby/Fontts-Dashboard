@@ -9,6 +9,7 @@
   width: 100%;
   padding: 0.9rem 1.5rem;
   border-bottom: 1px solid rgba(160, 32, 240, 0.12);
+  background-color: var(--Navy);
 }
 
 .hcrumb {

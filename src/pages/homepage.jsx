@@ -5,6 +5,16 @@ import logo from '../assets/images/logow.svg';
 import Menu from '../Components/Menu';
 import Header from '../Components/Header';
 import Title from '../Components/Title';
+import StatCard from './../Components/StatCard';
+import FlaggedUsers from '../assets/images/FlaggedUsers.svg';
+import OpenBriefs from '../assets/images/OpenBriefs.svg';
+import UrgentWorkListings from '../assets/images/UrgentWorkListings.svg';
+import RevenueToday from '../assets/images/RevenueToday.svg';
+import ActiveProjects from '../assets/images/ActiveProjects.svg';
+import ActiveClients from '../assets/images/ActiveClients.svg';
+import TotalDesigners from '../assets/images/TotalDesigners.svg';
+import SupportTickets from '../assets/images/SupportTickets.svg';
+
 
 const Home = () => {
   return (
@@ -40,6 +50,19 @@ const Home = () => {
 
           <main className="home-page__content">
             <Title title="Dashboard" subtitle="Platform overview — Sunday, March 22, 2025" />
+            <div className='row sa pad1'>
+            <StatCard title="Total Designers" value="1,284" icon={TotalDesigners} line="+12 this week" lclr="green" arrow={require('../assets/videos/arrowup.gif')} />
+            <StatCard title="Active Clients" value="847" icon={ActiveClients} line="+34 this week" lclr="green" arrow={require('../assets/videos/arrowup.gif')} />
+            <StatCard title="Active Projects" value="203" icon={ActiveProjects} line="12 overdue" lclr="rase" arrow={require('../assets/videos/warn.gif')} />
+            <StatCard title="Revenue Today" value="EGP 24,800" icon={RevenueToday} line="+8% vs yesterday" lclr="green" arrow={require('../assets/videos/arrowup.gif')} />
+            </div>
+            <div className='row sa pad1'>
+            <StatCard title="Urgent Work Listings" value="156" icon={UrgentWorkListings} line="23 sold today" lclr="green" arrow={require('../assets/videos/warng.gif')} />
+            <StatCard title="Open Briefs" value="89" icon={OpenBriefs} line="41 expire in 24hr" lclr="rase" arrow={require('../assets/videos/warn.gif')} />
+            <StatCard title="Flagged Users" value="7" icon={FlaggedUsers} line="Needs review" lclr="yellow" arrow={require('../assets/videos/warny.gif')} />
+            <StatCard title="Support Tickets" value="3 urgent" icon={SupportTickets} line="+8% vs yesterday" lclr="green" arrow={require('../assets/videos/arrowup.gif')} />
+            </div>
+
           </main>
         </div>
       </div>
