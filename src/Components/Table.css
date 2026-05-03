@@ -8,3 +8,15 @@
     border: 0.8px solid rgba(160, 32, 240, 0.15);
     background: #130E28;
 }
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pp2{
+    color: rgba(245, 245, 245, 0.50);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+}

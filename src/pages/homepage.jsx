@@ -16,6 +16,7 @@ import TotalDesigners from '../assets/images/TotalDesigners.svg';
 import SupportTickets from '../assets/images/SupportTickets.svg';
 import Footer from '../Components/Footer';
 import Head from '../Components/Head';
+import Table from './../Components/Table';
 
 
 const Home = () => {
@@ -65,8 +66,8 @@ const Home = () => {
             <StatCard title="Support Tickets" value="3 urgent" icon={SupportTickets} line="+8% vs yesterday" lclr="green" arrow={require('../assets/videos/arrowup.gif')} />
             </div>
             <Head h="Recent Projects" ar="/المشاريع الأخيرة" />
-            
-
+            <Table c1="Project Name" c2="Client" c3="Status" c4="Budget" c5="Deadline" c6="Progress" c7="Actions" />    
+                
 
 
 
