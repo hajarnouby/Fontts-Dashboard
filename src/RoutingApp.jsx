@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import Error from './pages/error';
 import Home from './pages/homepage';
+import Login from './pages/Login';
 import Preloader from './Components/Preloader';
 
 const RouteContent = () => {
@@ -21,7 +22,8 @@ const RouteContent = () => {
         <>
             <Preloader isLoading={isLoading} />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/"          element={<Login />} />
+                <Route path="/dashboard" element={<Home />} />
 
                 <Route path="*" element={<Error />} />
             </Routes>

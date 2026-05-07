@@ -40,3 +40,17 @@
     object-fit: contain;
     display: block;
 }
+
+.sct {
+    background: #130E28;
+    border: 1px solid rgba(160, 32, 240, 0.15);
+    border-radius: 16px;
+}
+
+.sic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(160, 32, 240, 0.12);
+    border: 1px solid rgba(160, 32, 240, 0.2);
+}
